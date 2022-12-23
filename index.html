@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .Maindiv {
+
+            text-align: center;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            font-size: 80px;
+            margin: 10px;
+            border-radius: 200px;
+            border: 10px solid orange;
+            background-color: rgb(164, 85, 12);
+
+        }
+
+        .Maindiv,
+        h1 {
+
+            margin: 50px;
+            background-color: rgb(235, 233, 233);
+            padding: 10px;
+        }
+
+        body {
+            background-color: black;
+        }
+
+        .button {
+
+            font-size: 40px;
+            border: 3px solid red;
+            border-radius: 20px;
+            padding: 20px;
+            color: white;
+            margin-left: 200px;
+
+
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <div>
+        <h1
+            style="text-align: center; background-color: black; 
+        color: whitesmoke; font-weight: bolder; font-size: 50px; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">
+            STOPWATCH</h1>
+
+    </div>
+    <div class="Maindiv" onclick="start()">
+        <h1 id="min">0 </h1>
+        <h1 id="sec">0 </h1>
+        <h1 id="milisec">0 </h1>
+    </div>
+    <div>
+        <button class="button" style="background-color: red;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;" onclick="start()"> START</button>
+        <button class="button" style="background-color: rgb(230, 76, 76);
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; " onclick="stop()">STOP</button>
+        <button class="button" style="background-color: rgb(104, 9, 9);
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;" onclick="reset()">RESET</button>
+    </div>
+
+
+    <script src="app.js"></script>
+</body>
+
+</html>
